@@ -1,0 +1,54 @@
+.swiperProjects__container{
+    margin: 0 auto;
+    width: 90vw;
+    padding: 16px;
+    background-color: #ffffff0b;
+
+    border-radius: 10px;
+}
+
+.swiperProjects__card_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+    cursor: grab;
+}
+.swiperProjects__image{
+    width: 100%;
+}
+
+.swiperProjects__buttons{
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    margin: 16px 0;
+}
+.swiperProjects__button{
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 3px solid var(--brancoTexto);
+    color: var(--brancoTexto);
+}
+.swiperProjects__button:hover{
+    background-color: transparent;
+    border: 3px solid var(--dourado);
+    color: var(--dourado);
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+@media (max-width: 810px) {
+    .swiperProjects__container {
+        width: 95%;
+        padding: 8px;
+    }
+  }

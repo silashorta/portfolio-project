@@ -1,0 +1,36 @@
+.footer__container{
+    height: auto;
+    padding: 112px 64px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--preto);
+    color: var(--brancoTexto);
+}
+
+.footer__links, .footer__redes{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+    padding: 16px;
+
+    font-size: 1.1rem;
+}
+
+.footer__icon{
+    width: 50px;
+}
+.footer__icon:hover{
+    cursor: pointer;
+}
+
+.footer__copy{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copy_text{
+    padding: 32px;
+}

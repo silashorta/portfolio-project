@@ -1,0 +1,33 @@
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+    padding: 0 64px;
+}
+
+.menu__logo{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.menu__links{
+    display: flex;
+    gap: 32px;
+
+    font-size: 1.1rem;
+}
+
+.menu__link:hover{
+    cursor: pointer;
+    color: var(--dourado);
+    border-bottom: 3px solid var(--dourado);
+    transition: 0.5s;
+
+}
+
+@media (max-width: 810px) {
+    .menu__container {
+        padding: 16px;
+    }
+  }

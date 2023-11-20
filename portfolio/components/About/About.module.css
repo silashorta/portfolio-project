@@ -1,0 +1,45 @@
+.about__container {
+    padding: 112px 64px;
+    gap: 80px;
+}
+
+.about__titulo {
+    padding: 32px 0;
+}
+
+.about__descricao_container {
+    display: flex;
+    gap: 24px;
+}
+
+.about__descricao {
+    width: 200%;
+    max-width: 100%;
+}
+
+.about__svg {
+    width: 100%;
+    /* ou qualquer outra largura desejada */
+    max-width: 100%;
+    /* garante que não ultrapasse 100% da largura disponível */
+}
+
+@media (max-width: 1024px) {
+    .about__descricao_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 810px) {
+    .about__container {
+        padding: 64px 16px;
+    }
+
+    .about__svg {
+        width: 100%;
+        /* ou qualquer outra largura desejada */
+        max-width: 85%;
+        /* garante que não ultrapasse 100% da largura disponível */
+    }
+
+}

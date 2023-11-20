@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+
+    background-color: #141414;
+    background-image: linear-gradient(160deg, #141414 21%, #001820 85%, #032a09 100%);
+    color: var(--cinza);
+}

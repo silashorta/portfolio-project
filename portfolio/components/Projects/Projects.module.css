@@ -1,0 +1,19 @@
+.projects__container {
+    display: flex;
+    padding: 112px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.projects__descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (max-width: 810px) {
+    .projects__container {
+        padding: 64px 16px;
+    }
+  }
