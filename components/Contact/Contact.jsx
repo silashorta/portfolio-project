@@ -7,19 +7,19 @@ function Contact() {
     <div className={styles.contact__container}>
       <div>
         <div className={styles.contact__descricao}>
-          <img src="../../public/assets/images/eu4.jpg" alt="" className={styles.contact__img} />
+          <img src="../../assets/images/eu4.jpg" alt="" className={styles.contact__img} />
           <div className={styles.contact__redes}>
             <div>
-              <a href="https://www.instagram.com/silashorta/" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/instagram.png" alt="" className={styles.contact__icon} /></a>
+              <a href="https://www.instagram.com/silashorta/" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/instagram.png" alt="" className={styles.contact__icon} /></a>
             </div>
             <div>
-            <a href="https://www.linkedin.com/in/silashorta/" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/linkedin.png" alt="" className={styles.contact__icon} /></a>
+            <a href="https://www.linkedin.com/in/silashorta/" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/linkedin.png" alt="" className={styles.contact__icon} /></a>
             </div>
             <div>
-            <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/github.png" alt="" className={styles.contact__icon} /></a>
+            <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/github.png" alt="" className={styles.contact__icon} /></a>
             </div>
             <div>
-            <a href=""><img src="../../public/assets/images/icon/o-email.png" alt="" className={styles.contact__icon} /></a>
+            <a href=""><img src="../../assets/images/icon/o-email.png" alt="" className={styles.contact__icon} /></a>
             </div>
           </div>
         </div>
