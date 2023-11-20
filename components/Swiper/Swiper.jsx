@@ -30,56 +30,56 @@ export default function App() {
       >
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div className={styles.carrousel__items}>
-                        <img src="../public/assets/images/skills/html-5.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/html-5.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>HTML5</h6>
                         <p className={styles.carrousel__descricao}>Transformo conceitos em código estruturado e semântico para construir bases sólidas para sites.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/css-3.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/css-3.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>CSS3</h6>
                         <p className={styles.carrousel__descricao}>Utilizo CSS para dar vida à estética, criando atraentes e responsivos que cativam os usuários.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/bootstrap.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/bootstrap.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>Bootstrap</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/js.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/js.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>JavaScript</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/biblioteca.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/biblioteca.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>React</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/node-js.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/node-js.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>NodeJS</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/mysql.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/mysql.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>MySQL</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                        <img src="../public/assets/images/skills/git.png" alt="" className={styles.carrousel__img} />
+                        <img src="../assets/images/skills/git.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>Git</h6>
                         <p className={styles.carrousel__descricao}>Sou apaixonado por JavaScript e o utilizo para criar interatividade e dinamismo em minhas aplicações web.</p>
                     </div>

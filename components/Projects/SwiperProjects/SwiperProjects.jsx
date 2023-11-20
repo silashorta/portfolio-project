@@ -47,7 +47,7 @@ export default function SwiperProjects() {
               <div className={styles.swiperProjects__card_container}>
                 <h5>{card.titulo}</h5>
                 <div>
-                  <img src={`../../public/assets/images/${card.imageUrl}`} alt="" className={styles.swiperProjects__image} />
+                  <img src={`../../assets/images/${card.imageUrl}`} alt="" className={styles.swiperProjects__image} />
                 </div>
                 <div>
                   <p>{card.descricao}</p>

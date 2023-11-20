@@ -13,16 +13,16 @@ function Footer() {
         </div>
         <div className={styles.footer__redes}>
           <div>
-            <a href="https://www.instagram.com/silashorta/" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/instagram.png" alt="" className={styles.footer__icon} /></a>
+            <a href="https://www.instagram.com/silashorta/" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/instagram.png" alt="" className={styles.footer__icon} /></a>
           </div>
           <div>
-          <a href="https://www.linkedin.com/in/silashorta/" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/linkedin.png" alt="" className={styles.footer__icon} /></a>
+          <a href="https://www.linkedin.com/in/silashorta/" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/linkedin.png" alt="" className={styles.footer__icon} /></a>
           </div>
           <div>
-          <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../public/assets/images/icon/github.png" alt="" className={styles.footer__icon} /></a>
+          <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/github.png" alt="" className={styles.footer__icon} /></a>
           </div>
           <div>
-          <a href=""><img src="../../public/assets/images/icon/o-email.png" alt="" className={styles.footer__icon} /></a>
+          <a href=""><img src="../../assets/images/icon/o-email.png" alt="" className={styles.footer__icon} /></a>
           </div>
         </div>
       </div>
