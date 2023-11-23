@@ -1,29 +1,20 @@
-import React from 'react'
-import 'animate.css';
-import styles from './About.module.css'
-import { useInView } from 'react-intersection-observer';
-
+import styles from './About.module.css';
 
 function About() {
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-  });
 
   return (
     <div className={styles.about__container}>
-      <div ref={ref} className={`animate__animated ${inView ? 'animate__fadeIn' : ''}`}>
-        <h3 className={styles.about__titulo}>Sobre</h3>
-        <div className={styles.about__descricao_container}>
+      <div>
+        <h3 className={styles.about__titulo} data-aos="fade">Sobre</h3>
+        <div className={styles.about__descricao_container} data-aos="fade-up">
           <div className={styles.about__descricao}>
             <p>Olá, sou Silas Horta, um desenvolvedor web apaixonado por transformar ideias em
               experiências digitais. Desde minha primeira linha de código, minha jornada começou com
-              uma simples curiosidade em desvendar o mundo por trás dos sites que visitava. Ao longo
-              do tempo, executei diversos projetos desafiadores que me permitiram aprofundar minhas
-              habilidades e aprender novas tecnologias. O que mais me fascina é a capacidade de
+              uma simples curiosidade em desvendar o mundo por trás dos sites que visitava.</p>
+            <p>O que mais me fascina é a capacidade de
               transformar conceitos em realidade digital, tornando linhas de código em experiências
               significativas.</p>
-            <p>Estou comprometido em continuar essa jornada de aprendizado constante e estou pronto para
-              colaborar com você em seu próximo projeto online. Vamos transformar suas ideias em
+            <p>Vamos transformar suas ideias em
               realidade digital e criar soluções que realmente se destaquem na web!</p>
           </div>
           <div className={styles.about__svg}>

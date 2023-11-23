@@ -8,6 +8,8 @@ import Footer from '../components/Footer/Footer'
 import Projects from '../components/Projects/Projects'
 import HeaderCTA from '../components/HeaderCTA/HeaderCTA'
 
+
+
 function App() {
   return (
     <div className='mainContainer'>

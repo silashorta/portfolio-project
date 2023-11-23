@@ -1,6 +1,6 @@
 .footer__container{
     height: auto;
-    padding: 112px 64px;
+    padding: 64px;
 
     display: flex;
     flex-direction: column;

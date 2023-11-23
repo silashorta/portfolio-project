@@ -6,7 +6,7 @@ import Carrousel from '../Swiper/Swiper'
 function Skills() {
   return (
     <div className={styles.skills__container}>
-      <h3 className={styles.skills__titulo}>Skills</h3>
+      <h3 className={styles.skills__titulo} data-aos="fade">Skills</h3>
       <div className={styles.skills__carrousel}>
         <Carrousel />
       </div>

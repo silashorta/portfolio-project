@@ -1,5 +1,5 @@
 .about__container {
-    padding: 64px;
+    padding: 64px 112px;
     gap: 80px;
 }
 
@@ -9,24 +9,33 @@
 
 .about__descricao_container {
     display: flex;
-    gap: 24px;
+    gap: 32px;
 }
 
 .about__descricao {
-    width: 100vw;
     max-width: 100%;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .about__svg {
-    width: 70vw;
+    width: 600px;
     /* ou qualquer outra largura desejada */
-    max-width: ;
+    max-width: 600px;
     /* garante que não ultrapasse 100% da largura disponível */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1272px) {
     .about__descricao_container {
         flex-direction: column;
+    }
+    .about__svg {
+        width: 100%;
+        /* ou qualquer outra largura desejada */
+        max-width: 60%;
+        /* garante que não ultrapasse 100% da largura disponível */
     }
 }
 
@@ -38,7 +47,7 @@
     .about__svg {
         width: 100%;
         /* ou qualquer outra largura desejada */
-        max-width: 85%;
+        max-width: 80%;
         /* garante que não ultrapasse 100% da largura disponível */
     }
 
