@@ -3,6 +3,29 @@ import styles from './Contact.module.css'
 import { Field, Form, Formik } from 'formik';
 
 function Contact() {
+
+  const handleSubmit = async (values) => {
+    try {
+      const response = await fetch('http://127.0.0.1:3001/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      try {
+        const data = await response.json();
+        console.log('JSON Data:', data);
+      } catch (error) {
+        console.error('Erro ao analisar JSON:', error);
+        // Você pode tentar realizar outras operações no corpo, como response.text(), aqui se necessário.
+      }
+    } catch (error) {
+      console.error('Erro ao enviar o e-mail:', error);
+    }
+  };
+
   return (
     <div id="contact" className={styles.contact__container}>
       <div>
@@ -30,7 +53,11 @@ function Contact() {
       </div>
       <div className={styles.contact__form_container}>
         <h3 data-aos="fade">Contato</h3>
-        <Formik className={styles.contact__formik}>
+        <Formik
+          initialValues={{ name: '', email: '', message: '' }}
+          onSubmit={handleSubmit}
+          className={styles.contact__formik}
+        >
           <Form className={styles.contact__form}>
             <div className={styles.contact__form_item}>
               <label htmlFor="name">Nome</label>
