@@ -42,4 +42,10 @@ p{
   font-size: 1.1rem;
   line-height: 150%;
 }
-
+a{
+  text-decoration: none;
+}
+a:visited{
+  color: var(--brancoTexto);
+  text-decoration: none;
+}

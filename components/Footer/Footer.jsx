@@ -5,11 +5,19 @@ function Footer() {
   return (
     <div className={styles.footer__container}>
       <div>
-        <div className={styles.footer__links}>
-          <div>Sobre</div>
-          <div>Skills</div>
-          <div>Projetos</div>
-          <div>Contato</div>
+      <div className={styles.footer__links}>
+          <a href="#about">
+            <div className={styles.footer__link}>Sobre</div>
+          </a>
+          <a href="#skills">
+            <div className={styles.footer__link}>Skills</div>
+          </a>
+          <a href="#projects">
+            <div className={styles.footer__link}>Projetos</div>
+          </a>
+          <a href="#contact">
+            <div className={styles.footer__link}>Contatos</div>
+          </a>
         </div>
         <div className={styles.footer__redes}>
           <div>
@@ -22,7 +30,7 @@ function Footer() {
           <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/github.png" alt="" className={styles.footer__icon} /></a>
           </div>
           <div>
-          <a href=""><img src="../../assets/images/icon/o-email.png" alt="" className={styles.footer__icon} /></a>
+          <a href="mailto:silashorta.dev@gmail.com?subject=Portfolio Message&body=Olá! Visitei o seu portfolio e queria falar com você."><img src="../../assets/images/icon/o-email.png" alt="" className={styles.footer__icon} /></a>
           </div>
         </div>
       </div>

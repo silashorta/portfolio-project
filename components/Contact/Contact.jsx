@@ -46,7 +46,7 @@ function Contact() {
               <a href="https://github.com/silashorta" rel='noreferrer' target='_blank'><img src="../../assets/images/icon/github.png" alt="" className={styles.contact__icon} /></a>
             </div>
             <div>
-              <a href=""><img src="../../assets/images/icon/o-email.png" alt="" className={styles.contact__icon} /></a>
+              <a href="mailto:silashorta.dev@gmail.com?subject=Portfolio Message&body=Olá! Visitei o seu portfolio e queria falar com você."><img src="../../assets/images/icon/o-email.png" alt="" className={styles.contact__icon} /></a>
             </div>
           </div>
         </div>

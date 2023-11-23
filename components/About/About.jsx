@@ -3,7 +3,7 @@ import styles from './About.module.css';
 function About() {
 
   return (
-    <div className={styles.about__container}>
+    <div id="about" className={styles.about__container}>
       <div>
         <h3 className={styles.about__titulo} data-aos="fade">Sobre</h3>
         <div className={styles.about__descricao_container} data-aos="fade-up">

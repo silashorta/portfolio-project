@@ -10,11 +10,15 @@
     cursor: grab;
 }
 .skills__titulo{
-    padding: 0px 64px;
+    padding: 0;
 }
 
 @media (max-width: 810px) {
     .skills__container {
         padding: 64px 16px;
+    }
+
+    .skills__titulo{
+        padding: 0px 8px;
     }
   }
