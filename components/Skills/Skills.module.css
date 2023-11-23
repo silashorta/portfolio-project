@@ -10,7 +10,7 @@
     cursor: grab;
 }
 .skills__titulo{
-    padding: 32px 64px;
+    padding: 0px 64px;
 }
 
 @media (max-width: 810px) {

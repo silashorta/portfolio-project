@@ -1,5 +1,5 @@
 .about__container {
-    padding: 112px 64px;
+    padding: 64px;
     gap: 80px;
 }
 
@@ -13,14 +13,14 @@
 }
 
 .about__descricao {
-    width: 200%;
+    width: 100vw;
     max-width: 100%;
 }
 
 .about__svg {
-    width: 100%;
+    width: 70vw;
     /* ou qualquer outra largura desejada */
-    max-width: 100%;
+    max-width: ;
     /* garante que não ultrapasse 100% da largura disponível */
 }
 
