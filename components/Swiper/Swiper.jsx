@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/swiper-bundle.css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
@@ -26,7 +27,7 @@ export default function App() {
         }} */
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper"          
       >
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div className={styles.carrousel__items}>

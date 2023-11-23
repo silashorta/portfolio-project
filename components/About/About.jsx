@@ -1,10 +1,17 @@
 import React from 'react'
+import 'animate.css';
 import styles from './About.module.css'
+import { useInView } from 'react-intersection-observer';
+
 
 function About() {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
+
   return (
     <div className={styles.about__container}>
-      <div>
+      <div ref={ref} className={`animate__animated ${inView ? 'animate__fadeIn' : ''}`}>
         <h3 className={styles.about__titulo}>Sobre</h3>
         <div className={styles.about__descricao_container}>
           <div className={styles.about__descricao}>

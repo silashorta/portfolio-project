@@ -4,7 +4,7 @@ import { Field, Form, Formik } from 'formik';
 
 function Contact() {
   return (
-    <div className={styles.contact__container}>
+    <div id="contact" className={styles.contact__container}>
       <div>
         <div className={styles.contact__descricao}>
           <img src="../../assets/images/eu4.jpg" alt="" className={styles.contact__img} />

@@ -9,8 +9,8 @@ function HeaderCTA() {
         <p>Você está pronto para mergulhar no universo da programação e design web? Descubra o que posso criar para você! Explore meu portfolio e veja como posso transformar ideias em experiências digitais incríveis.</p>
       </div>
       <div className={styles.cta__buttons}>
-        <button>Ver Projetos</button>
-        <button>Contato</button>
+        <a href="#projects"><button>Ver Projetos</button></a>
+        <a href="#contact"><button>Contato</button></a>
       </div>
     </div>
   )

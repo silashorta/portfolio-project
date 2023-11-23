@@ -1,4 +1,9 @@
- .carrousel__container {
+:root{
+    --swiper-theme-color: #fff;
+    --swiper-pagination-bullet-inactive-color: var(--cinza);
+}
+
+.carrousel__container {
     margin: 0;
     padding: 0 64px;
 }
@@ -21,4 +26,10 @@
 
 .carrousel__titulo, .carrousel__descricao{
     padding:  0 64px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
 }
