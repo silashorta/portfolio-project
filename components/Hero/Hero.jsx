@@ -1,5 +1,4 @@
 import React from 'react'
-import 'animate.css';
 import styles from './Hero.module.css'
 
 function Hero() {
