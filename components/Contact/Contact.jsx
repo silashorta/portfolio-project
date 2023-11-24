@@ -48,6 +48,9 @@ function Contact() {
             <div>
               <a href="mailto:silashorta.dev@gmail.com?subject=Portfolio Message&body=Olá! Visitei o seu portfolio e queria falar com você."><img src="../../assets/images/icon/o-email.png" alt="" className={styles.contact__icon} /></a>
             </div>
+            <div>
+              <a href="https://wa.me/+5521968840132?text=Olá!%20Visitei%20seu%20portfólio%20e%20gostaria%20de%20conversar%20com%20você." rel='noreferrer' target='_blank'><img src="../../assets/images/icon/whatsapp.png" alt="" className={styles.contact__icon} /></a>
+            </div>
           </div>
         </div>
       </div>
@@ -59,20 +62,20 @@ function Contact() {
           className={styles.contact__formik}
         >
           <Form className={styles.contact__form}>
-            <div className={styles.contact__form_item}>
+            <div className={styles.contact__form_item} data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
               <label htmlFor="name">Nome</label>
-              <Field id="name" name="name" placeholder="Nome completo" className={styles.contact__field} data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom" />
+              <Field id="name" name="name" placeholder="Nome completo" className={styles.contact__field}  />
             </div>
-            <div className={styles.contact__form_item}>
+            <div className={styles.contact__form_item} data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
               <label htmlFor="email">Email</label>
-              <Field id="email" name="email" placeholder="email@example.com" className={styles.contact__field} data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom" />
+              <Field id="email" name="email" placeholder="email@example.com" className={styles.contact__field} />
             </div>
-            <div className={styles.contact__form_item}>
+            <div className={styles.contact__form_item} data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
               <label htmlFor="message">Mensagem</label>
-              <Field as="textarea" rows="10" id="message" name="message" placeholder="Escreva sua mensagem" className={styles.contact__field} data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom" />
+              <Field as="textarea" rows="10" id="message" name="message" placeholder="Escreva sua mensagem" className={styles.contact__field} />
             </div>
             <button type="submit" className={styles.contact__submit} data-aos="fade-up">Enviar</button>
           </Form>

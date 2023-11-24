@@ -21,6 +21,8 @@ function Navbar() {
           </a>
         </div>
       </nav>
+      <div className={styles.main}>
+      </div>
     </div>
   )
 }

@@ -10,6 +10,32 @@ function Skills() {
       <div className={styles.skills__carrousel}>
         <Carrousel />
       </div>
+      <div className={styles.skills__cards} data-aos="fade-left">
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/html-5.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/css-3.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/bootstrap.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/js.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/biblioteca.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/node-js.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/mysql.png" alt="" className={styles.skills__card_img}/>
+        </div>
+        <div className={styles.skills__card}>
+          <img src="../assets/images/skills/git.png" alt="" className={styles.skills__card_img}/>
+        </div>
+      </div>
     </div>
   )
 }

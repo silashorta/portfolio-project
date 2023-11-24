@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about" className={styles.about__container}>
       <div>
-        <h3 className={styles.about__titulo} data-aos="fade">Sobre</h3>
+        <h3 className={styles.about__titulo} data-aos="fade">Quem sou</h3>
         <div className={styles.about__descricao_container} data-aos="fade-up">
           <div className={styles.about__descricao}>
             <p>Olá, sou Silas Horta, um desenvolvedor web apaixonado por transformar ideias em

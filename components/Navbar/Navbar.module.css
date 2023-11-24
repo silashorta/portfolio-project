@@ -1,4 +1,5 @@
-.menu__container{
+.menu__container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,19 +7,39 @@
     height: 72px;
     padding: 0 64px;
 }
+.main {
+    width: 100%;
+    height: 3px;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s ease-in-out infinite;
+}
 
-.menu__logo{
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+
+
+.menu__logo {
     font-size: 1.1rem;
     font-weight: 700;
 }
-.menu__links{
+
+.menu__links {
     display: flex;
     gap: 32px;
 
     font-size: 1.1rem;
 }
 
-.menu__link:hover{
+.menu__link:hover {
     cursor: pointer;
     color: var(--dourado);
     border-bottom: 3px solid var(--dourado);
@@ -30,4 +51,4 @@
     .menu__container {
         padding: 16px;
     }
-  }
+}

@@ -22,6 +22,10 @@
 .footer__icon{
     width: 50px;
 }
+
+#whatsapp{
+    border-radius: 50%;
+}
 .footer__icon:hover{
     cursor: pointer;
 }
