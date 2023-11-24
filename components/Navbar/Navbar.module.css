@@ -6,6 +6,8 @@
 
     height: 72px;
     padding: 0 64px;
+
+    background: linear-gradient(to right, var(--preto) 10%, #ffffff0b);
 }
 .main {
     width: 100%;

@@ -6,7 +6,7 @@ function Contact() {
 
   const handleSubmit = async (values) => {
     try {
-      const response = await fetch('http://127.0.0.1:3001/send-email', {
+      const response = await fetch('https://api-portfolio-two.vercel.app/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
