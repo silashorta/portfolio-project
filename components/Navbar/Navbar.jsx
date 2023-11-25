@@ -1,7 +1,13 @@
-import React from 'react'
-import styles from './Navbar.module.css'
+import React, { useState } from 'react';
+import styles from './Navbar.module.css';
 
 function Navbar() {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div>
       <nav className={styles.menu__container}>
@@ -20,11 +26,35 @@ function Navbar() {
             <div className={styles.menu__link}>Contatos</div>
           </a>
         </div>
+
+        {/* Adicionando o ícone do menu hamburguer */}
+        <div className={styles.menu__hamburger} onClick={toggleMenu}>
+          <img src="../assets/images/icon/menu.png" alt="" />
+        </div>
       </nav>
-      <div className={styles.main}>
-      </div>
+
+      {/* Adicionando o menu responsivo */}
+      {isMenuOpen && (
+        <div className={styles.responsive__menu}>
+          <a href="#about" onClick={toggleMenu}>
+            Sobre
+          </a>
+          <a href="#skills" onClick={toggleMenu}>
+            Skills
+          </a>
+          <a href="#projects" onClick={toggleMenu}>
+            Projetos
+          </a>
+          <a href="#contact" onClick={toggleMenu}>
+            Contatos
+          </a>
+          <div className={styles.main__responsive}></div>         
+        </div>
+      )}
+
+      <div className={styles.main}></div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -34,7 +34,7 @@
 
 @media (max-width: 810px) {
     .hero__container {
-        padding: 16px;
+        padding: 120px 16px 16px 16px;
         gap: 16px;
     }
 }
