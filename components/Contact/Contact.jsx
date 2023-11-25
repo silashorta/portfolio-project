@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styles from './Contact.module.css'
 import { Field, Form, Formik } from 'formik';
+import { useInView } from 'react-intersection-observer';
 
 function Contact() {
+
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleSubmit = async (values) => {
     try {
@@ -17,17 +21,53 @@ function Contact() {
       try {
         const data = await response.json();
         console.log('JSON Data:', data);
+
+        if (data.success) {
+          // Limpa o formulário e exibe a mensagem de sucesso
+          setFormData({ name: '', email: '', message: '' });
+          setShowSuccessMessage(true);
+        }
       } catch (error) {
         console.error('Erro ao analisar JSON:', error);
-        // Você pode tentar realizar outras operações no corpo, como response.text(), aqui se necessário.
       }
     } catch (error) {
       console.error('Erro ao enviar o e-mail:', error);
     }
   };
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    rootMargin: '-50px 0px',
+  });
+
+  const animatedRef = useRef();
+  const typingRef = useRef()
+
+  useEffect(() => {
+    if (inView) {
+      startTypingEffect();
+    }
+
+  }, [inView]);
+
+  const [text, setText] = useState('');
+  const fullText = "Contatos";
+
+  const startTypingEffect = () => {
+    let currentIndex = 0;
+
+    const intervalId = setInterval(() => {
+      setText(fullText.substring(0, currentIndex));
+      currentIndex++;
+
+      if (currentIndex > fullText.length) {
+        clearInterval(intervalId);
+      }
+    }, 150);
+  };
+
   return (
-    <div id="contact" className={styles.contact__container}>
+    <div id="contact" className={styles.contact__container} ref={ref}> 
       <div>
         <div className={styles.contact__descricao}>
           <img src="../../assets/images/eu4.jpg" alt="" className={styles.contact__img} data-aos="fade" />
@@ -55,30 +95,36 @@ function Contact() {
         </div>
       </div>
       <div className={styles.contact__form_container}>
-        <h3 data-aos="fade">Contato</h3>
+        <h3 ref={typingRef} data-aos="fade">{text}</h3>
         <Formik
-          initialValues={{ name: '', email: '', message: '' }}
+          initialValues={formData}
           onSubmit={handleSubmit}
           className={styles.contact__formik}
         >
-          <Form className={styles.contact__form}>
-            <div className={styles.contact__form_item} data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom">
-              <label htmlFor="name">Nome</label>
-              <Field id="name" name="name" placeholder="Nome completo" className={styles.contact__field}  />
+          {showSuccessMessage ? (
+            <div className={styles.successMessage}>
+              <p>Mensagem enviada com sucesso!</p>
             </div>
-            <div className={styles.contact__form_item} data-aos="fade-up"
+          ) : (
+            <Form className={styles.contact__form}>
+              <div className={styles.contact__form_item} data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
-              <label htmlFor="email">Email</label>
-              <Field id="email" name="email" placeholder="email@example.com" className={styles.contact__field} />
-            </div>
-            <div className={styles.contact__form_item} data-aos="fade-up"
+                <label htmlFor="name">Nome</label>
+                <Field id="name" name="name" placeholder="Nome completo" className={styles.contact__field} />
+              </div>
+              <div className={styles.contact__form_item} data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom">
-              <label htmlFor="message">Mensagem</label>
-              <Field as="textarea" rows="10" id="message" name="message" placeholder="Escreva sua mensagem" className={styles.contact__field} />
-            </div>
-            <button type="submit" className={styles.contact__submit} data-aos="fade-up">Enviar</button>
-          </Form>
+                <label htmlFor="email">Email</label>
+                <Field id="email" name="email" placeholder="email@example.com" className={styles.contact__field} />
+              </div>
+              <div className={styles.contact__form_item} data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
+                <label htmlFor="message">Mensagem</label>
+                <Field as="textarea" rows="10" id="message" name="message" placeholder="Escreva sua mensagem" className={styles.contact__field} />
+              </div>
+              <button type="submit" className={styles.contact__submit} data-aos="fade-up">Enviar</button>
+            </Form>
+          )}
         </Formik>
       </div>
     </div>

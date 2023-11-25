@@ -20,12 +20,17 @@
     gap: 16px;
 }
 
+.about__descricao p{
+    font-family: var(--outfit);
+}
+
 .about__svg {
     width: 600px;
     /* ou qualquer outra largura desejada */
     max-width: 600px;
     /* garante que não ultrapasse 100% da largura disponível */
 }
+  
 
 @media (max-width: 1272px) {
     .about__descricao_container {

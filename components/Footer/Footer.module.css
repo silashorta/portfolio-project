@@ -38,3 +38,11 @@
 .footer__copy_text{
     padding: 32px;
 }
+
+@media (max-width: 810px) {
+    .footer__container{
+        height: auto;
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+}

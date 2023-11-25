@@ -46,8 +46,6 @@
 }
 
 .contact__field {
-    width: 97%;
-
     padding: 12px;
     border-radius: 10px;
     border: 2px solid var(--preto);
@@ -84,8 +82,22 @@
 }
 
 .contact__icon {
-    width: 60px;
+    width: 50px;
 }
+
+.successMessage {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--cinza);
+    color: var(--preto);
+    font-size: 18px;
+    /* ... (outros estilos desejados) */
+  }
+  
 
 @media (max-width: 810px) {
     .contact__container {
@@ -95,5 +107,9 @@
 
     .contact__form {
         width: 80vw;
+    }
+
+    .contact__redes {
+        gap: 16px;
     }
 }

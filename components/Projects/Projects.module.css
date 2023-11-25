@@ -12,6 +12,10 @@
     gap: 24px;
 }
 
+.projects__descricao p{
+    font-family: var(--outfit);
+}
+
 @media (max-width: 810px) {
     .projects__container {
         padding: 64px 16px;

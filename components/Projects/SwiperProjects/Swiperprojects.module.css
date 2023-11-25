@@ -14,6 +14,10 @@
     gap: 24px 0;
     cursor: grab;
 }
+
+.swiperProjects__card_container p{
+font-family: var(--outfit);
+}
 .swiperProjects__image{
     width: 100%;
 }

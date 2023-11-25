@@ -19,6 +19,10 @@
     width: 100%;
 }
 
+.carrousel__descricao{
+    font-family: var(--outfit);
+}
+
 .carrousel__img {
     padding: 24px 64px;  
     height: 100px;

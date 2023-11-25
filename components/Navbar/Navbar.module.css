@@ -16,6 +16,7 @@
     background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
     background-size: 200% 100%;
     animation: gradientAnimation 5s ease-in-out infinite;
+    filter: brightness(1.5)
 }
 
 @keyframes gradientAnimation {

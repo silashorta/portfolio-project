@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 :root {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +13,8 @@
   --cinza: #F4F4F4;
   --brancoTexto: #e0e6e3;
   --verde: #10FF70;
+
+  --outfit: 'Outfit', sans-serif;
 }
 
 h1{
