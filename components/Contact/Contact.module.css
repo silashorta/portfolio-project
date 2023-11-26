@@ -97,10 +97,11 @@
     align-items: center;
     flex-wrap: nowrap;
     border-radius: 10px;
-    
     background-color: var(--cinza);
-    color: var(--preto);
+    color: green;
     font-size: 18px;
+    font-weight: 500;
+    border: 4px solid var(--verde);
     /* ... (outros estilos desejados) */
   }
   

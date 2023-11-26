@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import styles from './Contact.module.css'
 import { Field, Form, Formik } from 'formik';
 import { useInView } from 'react-intersection-observer';
