@@ -85,12 +85,18 @@
     width: 50px;
 }
 
+.contact__icon_close {
+    width: 30px;
+    cursor: pointer;
+}
+
 .successMessage {
-    width: 45vw;
-    height: 100%;
+    padding: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
     
     background-color: var(--cinza);
     color: var(--preto);
