@@ -14,6 +14,7 @@
 
 .projects__descricao p{
     font-family: var(--outfit);
+
 }
 
 @media (max-width: 810px) {
