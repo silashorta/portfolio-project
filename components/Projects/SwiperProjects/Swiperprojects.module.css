@@ -17,7 +17,7 @@
 
 .swiperProjects__card_container p{
 font-family: var(--outfit);
-font-size: 16px;
+font-size: 16px !important;
 
 }
 .swiperProjects__image{

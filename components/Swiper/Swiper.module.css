@@ -21,7 +21,7 @@
 
 .carrousel__descricao{
     font-family: var(--outfit);
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 .carrousel__img {
