@@ -4,7 +4,6 @@ import Carrousel from '../Swiper/Swiper'
 import { useInView } from 'react-intersection-observer';
 import "animate.css"
 
-
 function Skills() {
 
   const [ref, inView] = useInView({
@@ -37,6 +36,20 @@ function Skills() {
     }, 150); // Ajuste conforme necessário para a velocidade da digitação
   };
 
+  const skillsData = [
+    { icon: 'html-5.png', width: '90%', text: '90%' },
+    { icon: 'css-3.png', width: '80%', text: '80%' },
+    { icon: 'bootstrap.png', width: '80%', text: '90%' },
+    { icon: 'js.png', width: '80%', text: '80%' },
+    { icon: 'biblioteca.png', width: '70%', text: '70%' },
+    { icon: 'node-js.png', width: '60%', text: '60%' },
+    { icon: 'mysql.png', width: '60%', text: '60%' },
+    { icon: 'git.png', width: '80%', text: '90%' },
+    { icon: 'express.svg', width: '60%', text: '70%' },
+    { icon: 'sequelize.png', width: '80%', text: '80%' },
+    { icon: 'npm.svg', width: '90%', text: '90%' },
+  ];
+
   return (
     <div id='skills' className={styles.skills__container} ref={ref}>
       <h3 ref={typingRef} className={styles.skills__titulo} data-aos="fade-up">{text}</h3>
@@ -44,61 +57,13 @@ function Skills() {
         <Carrousel />
       </div>
       <div className={styles.skills__cards} data-aos="fade-in">
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/html-5.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "95%"}}></div>
-          <p>90%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/css-3.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "80%"}}></div>
-          <p>80%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/bootstrap.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/js.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "80%"}}></div>
-          <p>80%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/biblioteca.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "70%"}}></div>
-          <p>70%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/node-js.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "60%"}}></div>
-          <p>60%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/mysql.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "60%"}}></div>
-          <p>60%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/git.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/express.svg" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "70%"}}></div>
-          <p>70%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/sequelize.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "80%"}}></div>
-          <p>80%</p>
-        </div>
-        <div className={styles.skills__card} data-aos="fade-up">
-          <img src="../assets/images/skills/npm.svg" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
-        </div>
+        {skillsData.map((skill, index) => (
+          <div className={styles.skills__card} data-aos="fade-up" key={index}>
+            <img src={`../assets/images/skills/${skill.icon}`} alt="" className={styles.skills__card_img} />
+            <div className={styles.skills__bar} style={{ width: `${skill.width}`}}></div>
+            <p>{skill.text}</p>
+          </div>
+        ))}
       </div>
     </div>
   )

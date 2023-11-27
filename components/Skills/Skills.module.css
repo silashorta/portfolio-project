@@ -15,7 +15,7 @@
  }
 
  .skills__cards {
-    width: 100%;
+     width: 100%;
      margin-top: 64px;
      display: flex;
      justify-content: space-between;
@@ -25,33 +25,45 @@
  }
 
  .skills__card {
-    width: 100%;
-    padding: 16px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; /* Para centralizar verticalmente */
-    gap: 16px;
-    background-color: #ffffff0b;
-    border-radius: 10px;
-}
+     width: 100%;
+     padding: 16px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     /* Para centralizar verticalmente */
+     gap: 16px;
+     background-color: #ffffff0b;
+     border-radius: 10px;
+ }
 
- .skills__card_img{
-    width: 100%;
-    max-width: 56px;
-    align-self: center;
-}
+ .skills__card p {
+     display: none;
+ }
 
-.skills__bar{
-    height: 16px;
-    background-color: #3498db;
-    width: 50%;
-    transition: width 0.5s ease-in-out;
-    border-radius: 10px;
-}
+ .skills__card_img {
+     width: 100%;
+     max-width: 56px;
+     align-self: center;
+ }
+
+ .skills__bar {
+     height: 16px;
+     background-color: #8BC6EC;
+     background-image: linear-gradient(135deg, #8BC6EC 0%, #3498db 50%);
+
+     border-radius: 10px;
+     width: 0;
+     transition: width 0.9s ease-in-out;
+ }
+
+ .fill {
+     width: 100%;
+     /* Quando a classe fill é aplicada, a largura é definida como 100% */
+ }
 
  @media (max-width: 810px) {
      .skills__container {
-         padding:24px 16px;
+         padding: 24px 16px;
      }
 
      .skills__titulo {
@@ -59,10 +71,15 @@
      }
 
      .skills__card {
-        width: 100%;
-    }
+         width: 100%;
+     }
 
-    .skills__card_img{
-        max-width: 50px;
-    }
+     .skills__card_img {
+         max-width: 50px;
+     }
+
+     .skills__bar {
+         height: 12px;
+         width: calc(-20%);
+     }
  }
