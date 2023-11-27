@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import styles from './Skills.module.css'
 import Carrousel from '../Swiper/Swiper'
 import { useInView } from 'react-intersection-observer';
+import "animate.css"
 
 
 function Skills() {
@@ -46,22 +47,22 @@ function Skills() {
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/html-5.png" alt="" className={styles.skills__card_img} />
           <div className={styles.skills__bar} style={{width: "95%"}}></div>
-          <p>95%</p>
+          <p>90%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/css-3.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
+          <div className={styles.skills__bar} style={{width: "80%"}}></div>
+          <p>80%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/bootstrap.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "95%"}}></div>
-          <p>95%</p>
+          <div className={styles.skills__bar} style={{width: "90%"}}></div>
+          <p>90%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/js.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
+          <div className={styles.skills__bar} style={{width: "80%"}}></div>
+          <p>80%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/biblioteca.png" alt="" className={styles.skills__card_img} />
@@ -70,8 +71,8 @@ function Skills() {
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/node-js.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "50%"}}></div>
-          <p>50%</p>
+          <div className={styles.skills__bar} style={{width: "60%"}}></div>
+          <p>60%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/mysql.png" alt="" className={styles.skills__card_img} />
@@ -85,13 +86,13 @@ function Skills() {
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/express.svg" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "80%"}}></div>
-          <p>80%</p>
+          <div className={styles.skills__bar} style={{width: "70%"}}></div>
+          <p>70%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/sequelize.png" alt="" className={styles.skills__card_img} />
-          <div className={styles.skills__bar} style={{width: "90%"}}></div>
-          <p>90%</p>
+          <div className={styles.skills__bar} style={{width: "80%"}}></div>
+          <p>80%</p>
         </div>
         <div className={styles.skills__card} data-aos="fade-up">
           <img src="../assets/images/skills/npm.svg" alt="" className={styles.skills__card_img} />

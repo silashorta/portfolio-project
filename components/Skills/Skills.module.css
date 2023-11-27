@@ -37,12 +37,12 @@
 
  .skills__card_img{
     width: 100%;
-    max-width: 80px;
+    max-width: 56px;
     align-self: center;
 }
 
 .skills__bar{
-    height: 20px;
+    height: 16px;
     background-color: #3498db;
     width: 50%;
     transition: width 0.5s ease-in-out;
