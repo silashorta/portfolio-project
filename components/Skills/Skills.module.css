@@ -47,19 +47,18 @@
  }
 
  .skills__bar {
-     height: 16px;
-     background-color: #8BC6EC;
-     background-image: linear-gradient(135deg, #8BC6EC 0%, #3498db 50%);
-
-     border-radius: 10px;
-     width: 0;
-     transition: width 0.9s ease-in-out;
- }
-
- .fill {
-     width: 100%;
-     /* Quando a classe fill é aplicada, a largura é definida como 100% */
- }
+    height: 16px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #3498db 50%);
+    border-radius: 10px;
+    width: 0; /* Inicialmente, a largura é 0 */
+    transition: width 0.9s ease-in-out;
+  }
+  
+  /* Adicione a classe 'fill' para acionar a transição */
+  .skills__bar.fill {
+    width: 100%;
+  }
 
  @media (max-width: 810px) {
      .skills__container {

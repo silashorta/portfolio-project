@@ -7,14 +7,16 @@ import "animate.css"
 function Skills() {
 
   const [ref, inView] = useInView({
-    triggerOnce: false, // Garante que a animação seja acionada apenas uma vez
+    triggerOnce: true, // Garante que a animação seja acionada apenas uma vez
     rootMargin: '-100px 0px', // Ajuste conforme necessário para a área de visualização
   });
 
   const typingRef = useRef()
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (inView) {
+      setIsVisible(true);
       startTypingEffect();
     }
 
@@ -45,7 +47,7 @@ function Skills() {
     { icon: 'node-js.png', width: '60%', text: '60%' },
     { icon: 'mysql.png', width: '60%', text: '60%' },
     { icon: 'git.png', width: '80%', text: '90%' },
-    { icon: 'express.svg', width: '60%', text: '70%' },
+    { icon: 'express.png', width: '60%', text: '70%' },
     { icon: 'sequelize.png', width: '80%', text: '80%' },
     { icon: 'npm.svg', width: '90%', text: '90%' },
   ];
@@ -58,9 +60,9 @@ function Skills() {
       </div>
       <div className={styles.skills__cards} data-aos="fade-in">
         {skillsData.map((skill, index) => (
-          <div className={styles.skills__card} data-aos="fade-up" key={index}>
+          <div className={styles.skills__card} data-aos={`fade-up`} key={index}>
             <img src={`../assets/images/skills/${skill.icon}`} alt="" className={styles.skills__card_img} />
-            <div className={styles.skills__bar} style={{ width: `${skill.width}`}}></div>
+            <div className={`${styles.skills__bar} ${isVisible ? styles.fill : ''}`} style={{ width: isVisible ? skill.width : '0' }}></div>
             <p>{skill.text}</p>
           </div>
         ))}

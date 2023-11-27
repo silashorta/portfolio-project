@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <div>
       <nav className={styles.menu__container}>
-        <div className={styles.menu__logo}>&lt;/&gt;</div>
+        <div><img src="../../assets/images/icon/codigo-html.png" alt="" className={styles.menu__logo} /></div>
         <div className={styles.menu__links}>
           <a href="#about">
             <div className={styles.menu__link}>Sobre</div>

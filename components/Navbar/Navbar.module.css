@@ -51,8 +51,7 @@
 
 
 .menu__logo {
-    font-size: 1.1rem;
-    font-weight: 700;
+    width: 30px;
 }
 
 .menu__links {
@@ -117,7 +116,7 @@
         overflow: hidden;
         background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
         background-size: 200% 100%;
-        animation: _gradientAnimation_updjm_1 5s ease-in-out infinite;
+        animation: gradientAnimation 5s ease-in-out infinite;
         filter: brightness(1.5);
         position: absolute;
         top: 88px;

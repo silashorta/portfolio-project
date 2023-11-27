@@ -111,7 +111,7 @@ export default function App() {
 
                 <SwiperSlide className={styles.carrousel__slide}>
                     <div>
-                       <img src="../../assets/images/skills/express.svg" alt="" className={styles.carrousel__img} />
+                       <img src="../../assets/images/skills/express.png" alt="" className={styles.carrousel__img} />
                         <h6 className={styles.carrousel__titulo}>Express</h6>
                         <p className={styles.carrousel__descricao}>
                         Com o Express, desenvolvo servidores robustos e eficientes para aplicações web. Utilizando o poder do Node.js, crio APIs escaláveis que garantem uma comunicação eficaz entre o frontend e o backend.
