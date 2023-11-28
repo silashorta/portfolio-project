@@ -1,3 +1,7 @@
+ :root{
+    --max-width: 100%;
+ }
+ 
  .skills__container {
      padding: 64px 112px;
      gap: 24px;
@@ -27,17 +31,13 @@
  .skills__card {
      width: 100%;
      padding: 16px;
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     /* Para centralizar verticalmente */
-     gap: 16px;
+     display: ;
      background-color: #ffffff0b;
      border-radius: 10px;
  }
 
  .skills__card p {
-     display: none;
+     display: ;
  }
 
  .skills__card_img {
@@ -47,18 +47,16 @@
  }
 
  .skills__bar {
-    height: 16px;
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #3498db 50%);
-    border-radius: 10px;
-    width: 0; /* Inicialmente, a largura é 0 */
-    transition: width 0.9s ease-in-out;
+    padding: 16px;
+  }
+
+  .skills__bar_text {
+    padding: 16px;
+    font-weight: 500;
   }
   
   /* Adicione a classe 'fill' para acionar a transição */
-  .skills__bar.fill {
-    width: 100%;
-  }
+
 
  @media (max-width: 810px) {
      .skills__container {
@@ -75,10 +73,5 @@
 
      .skills__card_img {
          max-width: 50px;
-     }
-
-     .skills__bar {
-         height: 12px;
-         width: calc(-20%);
      }
  }

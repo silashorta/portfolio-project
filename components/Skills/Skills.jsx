@@ -3,6 +3,7 @@ import styles from './Skills.module.css'
 import Carrousel from '../Swiper/Swiper'
 import { useInView } from 'react-intersection-observer';
 import "animate.css"
+import ProgressBar from "@ramonak/react-progress-bar";
 
 function Skills() {
 
@@ -39,17 +40,17 @@ function Skills() {
   };
 
   const skillsData = [
-    { icon: 'html-5.png', width: '90%', text: '90%' },
-    { icon: 'css-3.png', width: '80%', text: '80%' },
-    { icon: 'bootstrap.png', width: '80%', text: '90%' },
-    { icon: 'js.png', width: '80%', text: '80%' },
-    { icon: 'biblioteca.png', width: '70%', text: '70%' },
-    { icon: 'node-js.png', width: '60%', text: '60%' },
-    { icon: 'mysql.png', width: '60%', text: '60%' },
-    { icon: 'git.png', width: '80%', text: '90%' },
-    { icon: 'express.png', width: '60%', text: '70%' },
-    { icon: 'sequelize.png', width: '80%', text: '80%' },
-    { icon: 'npm.svg', width: '90%', text: '90%' },
+    { icon: 'html-5.png', width: 90, text: 'Avançado' },
+    { icon: 'css-3.png', width: 80, text: 'Avançado' },
+    { icon: 'bootstrap.png', width: 80, text: 'Avançado' },
+    { icon: 'js.png', width: 80, text: 'Avançado' },
+    { icon: 'biblioteca.png', width: 70, text: 'Intermediário' },
+    { icon: 'node-js.png', width: 60, text: 'Básico' },
+    { icon: 'mysql.png', width: 60, text: 'Básico' },
+    { icon: 'git.png', width: 80, text: 'Avançado' },
+    { icon: 'express.png', width: 60, text: 'Básico' },
+    { icon: 'sequelize.png', width: 80, text: 'Avançado' },
+    { icon: 'npm.svg', width: 90, text: 'Avançado' },
   ];
 
   return (
@@ -61,9 +62,10 @@ function Skills() {
       <div className={styles.skills__cards} data-aos="fade-in">
         {skillsData.map((skill, index) => (
           <div className={styles.skills__card} data-aos={`fade-up`} key={index}>
-            <img src={`../assets/images/skills/${skill.icon}`} alt="" className={styles.skills__card_img} />
-            <div className={`${styles.skills__bar} ${isVisible ? styles.fill : ''}`} style={{ width: isVisible ? skill.width : '0' }}></div>
-            <p>{skill.text}</p>
+            <img src={`../assets/images/skills/${skill.icon}`} alt="" className={styles.skills__card_img} /> <span className={styles.skills__bar_text}> {`${skill.text}`} </span>
+            <div className={styles.skills__bar}>
+              <ProgressBar completed={skill.width} bgColor="#3e9cff" height="16px" animateOnRender={true} initCompletedOnAnimation="0"/>
+            </div>
           </div>
         ))}
       </div>
