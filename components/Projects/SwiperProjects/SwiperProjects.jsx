@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import styles from './Swiperprojects.module.css'
 
@@ -38,8 +38,12 @@ export default function SwiperProjects() {
           clickable: true,
         }}
         navigation={false}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+      }}
       >
         {infoCard.map((card, index) => (
           <SwiperSlide key={index}>

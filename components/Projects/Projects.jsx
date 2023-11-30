@@ -40,7 +40,7 @@ function Projects() {
     <div id='projects' className={styles.projects__container} ref={ref}>
       <div className={styles.projects__descricao} >
         <h3 ref={typingRef} data-aos="fade-up">{text}</h3>
-        <p data-aos="fade-up">Aqui estão alguns exemplos dos projetos que desenvolvi. Cada projeto representa uma oportunidade única e impactante.</p>
+        {/* <p data-aos="fade-up">Aqui estão alguns exemplos dos projetos que desenvolvi. Cada projeto representa uma oportunidade única e impactante.</p> */}
       </div>
         <SwiperProjects />
     </div>
