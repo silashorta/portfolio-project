@@ -20,7 +20,7 @@ export default function SwiperProjects() {
       siteUrl: "https://busca-cep-ebon.vercel.app",
       projetoUrl: "https://github.com/silashorta/Busca-CEP"
     }, {
-      titulo: "Número Secreto",
+      titulo: "Número Secreto (Desktop apenas)",
       imageUrl: "numero_secreto.png",
       descricao: "O projeto consistiu na criação de um jogo envolvente onde os jogadores utilizam comandos de voz para tentar adivinhar o número secreto. O JavaScript foi a principal linguagem de programação empregada para garantir a interatividade e dinamismo necessários para essa experiência de jogo.",
       siteUrl: "https://jogo-numero-secreto-phi-neon.vercel.app",

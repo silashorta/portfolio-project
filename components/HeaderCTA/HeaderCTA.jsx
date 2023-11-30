@@ -38,7 +38,7 @@ function HeaderCTA() {
     <div className={styles.cta__container}>
       <div className={styles.cta__text}>
         <h3 ref={typingRef}>{text}</h3>
-        <p>Você está pronto para mergulhar no universo da programação e design web? Explore meu portfolio e veja como posso transformar ideias em experiências digitais incríveis.</p>
+        <p>Explore meu portfolio e veja como posso transformar ideias em experiências digitais incríveis.</p>
       </div>
       <div className={styles.cta__buttons}>
         <a href="#projects"><button>Ver Projetos</button></a>
