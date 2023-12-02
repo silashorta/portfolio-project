@@ -50,7 +50,11 @@ p{
 a{
   text-decoration: none;
 }
-a:visited{
+
+a{
   color: var(--brancoTexto);
+}
+a:visited{
+  color: var(--brancoTexto) !important;
   text-decoration: none;
 }

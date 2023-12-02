@@ -29,8 +29,7 @@
     cursor: pointer;
   }
   
-  .menu__links:visited {
-    color: red;
+  .menu__links: {
   }
   
   /* Adicionar estilos para o menu responsivo */
