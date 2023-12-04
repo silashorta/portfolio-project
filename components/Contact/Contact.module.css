@@ -4,6 +4,8 @@
     gap: 80px;
 
     padding: 64px;
+
+    background: linear-gradient(var(--preto), #141414, #000);
 }
 
 .contact__descricao {
@@ -73,6 +75,8 @@
     cursor: pointer;
     border: 3px solid var(--dourado);
     color: var(--dourado);
+
+    
 }
 
 .contact__redes {

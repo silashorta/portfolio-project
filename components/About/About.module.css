@@ -1,6 +1,7 @@
 .about__container {
     padding: 64px 112px;
     gap: 80px;
+    background-color: var(--preto);
 }
 
 .about__titulo {

@@ -6,7 +6,7 @@
      padding: 64px 112px;
      gap: 24px;
 
-     background-color: var(--preto);
+     background: linear-gradient(var(--preto), #141414);
      color: var(--brancoTexto);
  }
 
