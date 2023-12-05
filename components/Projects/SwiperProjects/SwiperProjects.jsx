@@ -25,6 +25,12 @@ export default function SwiperProjects() {
       descricao: "O projeto consistiu na criação de um jogo envolvente onde os jogadores utilizam comandos de voz para tentar adivinhar o número secreto. O JavaScript foi a principal linguagem de programação empregada para garantir a interatividade e dinamismo necessários para essa experiência de jogo.",
       siteUrl: "https://jogo-numero-secreto-phi-neon.vercel.app",
       projetoUrl: "https://github.com/silashorta/jogo-numero-secreto"
+    }, {
+      titulo: "ToDo List",
+      imageUrl: "to-do-list.png",
+      descricao: `Este projeto é uma aplicação web de lista de tarefas (ToDo List) desenvolvida utilizando a biblioteca React. A aplicação permite criar diferentes listas de tarefas, cada uma associada a uma categoria específica, como "Work Files", "Personal Files", "To-Do", e "Others". Cada lista de tarefas é representada por um card, apresentando um título, uma cor de fundo distinta e uma área para adicionar novas tarefas. As tarefas são exibidas em uma lista abaixo do formulário de adição, e cada tarefa pode ser removida individualmente.`,
+      siteUrl: "https://to-do-list-seven-psi.vercel.app/",
+      projetoUrl: "https://github.com/silashorta/ToDo-List"
     }
   ]
 
