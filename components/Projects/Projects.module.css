@@ -8,13 +8,13 @@
     background: linear-gradient(#141414, var(--preto));
 }
 
-.projects__descricao{
+.projects__descricao {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.projects__descricao p{
+.projects__descricao p {
     font-family: var(--outfit);
 
 }
@@ -23,4 +23,4 @@
     .projects__container {
         padding: 64px 16px;
     }
-  }
+}
