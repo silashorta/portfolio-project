@@ -59,9 +59,9 @@ function Skills() {
       <div className={styles.skills__carrousel}>
         <Carrousel />
       </div>
-      <div className={styles.skills__cards} data-aos="fade-in">
+      <div className={styles.skills__cards} data-aos="fade">
         {skillsData.map((skill, index) => (
-          <div className={styles.skills__card} data-aos={`fade-up`} key={index}>
+          <div className={styles.skills__card} data-aos={``} key={index}>
             <img src={`../assets/images/skills/${skill.icon}`} alt="" className={styles.skills__card_img} /> <span className={styles.skills__bar_text}> {`${skill.text}`} </span>
             <div className={styles.skills__bar}>
               <ProgressBar completed={skill.width} bgColor="#3e9cff" height="16px" animateOnRender={true} initCompletedOnAnimation="0"/>
