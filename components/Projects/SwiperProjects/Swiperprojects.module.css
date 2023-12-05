@@ -52,6 +52,11 @@ font-size: 16px !important;
     transition: 0.5s;
 }
 
+.skills__icon{
+    width: 40px;
+    margin: 16px 4px;
+}
+
 @media (max-width: 810px) {
     .swiperProjects__container {
         width: 95%;
