@@ -4,12 +4,11 @@
     align-items: center;
     justify-content: space-around;
     gap: 64px;
-    padding: 112px 64px;
+    padding: 0;
 
     background-image: url(../../public/assets/images/bg-transparent.png);
-    background-size: cover;
+    background-size: 100vw 100% cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .hero__text {
@@ -31,7 +30,7 @@
 }
 
 .hero__img {
-    height: 300px;
+    height: 100vh;
 }
 
 @media (max-width: 810px) {

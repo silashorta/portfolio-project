@@ -10,7 +10,7 @@ function Hero() {
         <h2 className={styles.subtitulo} data-aos="fade">Eu sou o Silas Horta <div className={`animate__animated animate__headShake ${styles.text_main}`} >Web Developer</div> &lt;/&gt;</h2>
       </div>
       <div >
-        <img src="../../assets/images/eu.png" alt="" className={styles.hero__img}/>
+        <img src="../../assets/images/teste.png" alt="" className={styles.hero__img}/>
       </div>
     </div>
   )

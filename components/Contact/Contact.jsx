@@ -60,7 +60,7 @@ function Contact() {
   }, [inView]);
 
   const [text, setText] = useState('');
-  const fullText = "Contatos";
+  const fullText = "Fale comigo";
 
   const startTypingEffect = () => {
     let currentIndex = 0;

@@ -10,7 +10,8 @@
   --laranja: #fd5200;
   --dourado: #f0c808;
   --azulClaro: #086788;
-  --preto: #000000c7 /* #141414 */;
+  --preto: #000000c7;
+  --dark: #141414;
   --cinza: #F4F4F4;
   --brancoTexto: #e0e6e3;
   --verde: #10FF70;
@@ -18,43 +19,50 @@
   --outfit: 'Outfit', sans-serif;
 }
 
-h1{
+h1 {
   font-size: 3.5rem;
   line-height: 120%;
 }
-h2{
+
+h2 {
   font-size: 3rem;
   line-height: 120%;
 }
-h3{
+
+h3 {
   font-size: 2.5rem;
   line-height: 120%;
 }
-h4{
+
+h4 {
   font-size: 2rem;
   line-height: 140%;
 }
-h5{
+
+h5 {
   font-size: 1.5rem;
   line-height: 140%;
 }
-h6{
+
+h6 {
   font-size: 1.25rem;
   line-height: 140%;
 }
 
-p{
+p {
   font-size: 1.1rem;
   line-height: 150%;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
-a{
+a {
   color: var(--brancoTexto);
 }
-a:visited{
+
+a:visited {
   color: var(--brancoTexto) !important;
   text-decoration: none;
 }
