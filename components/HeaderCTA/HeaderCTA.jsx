@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './HeaderCTA.module.css'
 import { useInView } from 'react-intersection-observer';
-
+import 'animate.css'
 
 function HeaderCTA() {
 
@@ -37,10 +37,10 @@ function HeaderCTA() {
   return (
     <div className={styles.cta__container}>
       <div className={styles.cta__text}>
-        <h3 ref={typingRef}>{text}</h3>
-        <p>Explore meu portfolio e veja como posso transformar ideias em experiências digitais incríveis.</p>
+        <h3 className='animate__animated animate__fade' ref={typingRef}>{text}</h3>
+        <p data-aos="slide-up">Explore meu portfolio e veja como posso transformar ideias em experiências digitais incríveis.</p>
       </div>
-      <div className={styles.cta__buttons}>
+      <div data-aos="flip-up" className={styles.cta__buttons}>
         <a href="#projects"><button>Ver Projetos</button></a>
         <a href="#contact"><button>Contato</button></a>
       </div>

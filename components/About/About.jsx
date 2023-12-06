@@ -41,7 +41,7 @@ function About() {
       <div>
         <h3 ref={typingRef} className={styles.about__titulo} data-aos="fade-up">{text}</h3>
         <div className={styles.about__descricao_container} data-aos="fade-up">
-          <div className={styles.about__descricao}>
+          <div ref={animatedRef} className={"animate__animated animate__bounceInLeft " + styles.about__descricao}>
             <p>Olá, sou Silas Horta, um desenvolvedor web apaixonado por transformar ideias em
               experiências digitais. Desde minha primeira linha de código, minha jornada começou com
               uma simples curiosidade em desvendar o mundo por trás dos sites que visitava.</p>

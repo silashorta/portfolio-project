@@ -7,10 +7,10 @@ function Hero() {
     <div className={styles.hero__container}>
       <div className={styles.hero__text}>
         <h1 className={styles.titulo}>Hello, world!</h1>
-        <h2 className={styles.subtitulo} data-aos="fade">Eu sou o Silas Horta <div className={`animate__animated animate__headShake ${styles.text_main}`} >Web Developer</div> &lt;/&gt;</h2>
+        <h2 className={styles.subtitulo} data-aos="fade">Eu sou o Silas Horta <div className={`animate__animated animate__pulse ${styles.text_main}`} >Web Developer</div> &lt;/&gt;</h2>
       </div>
       <div >
-        <img src="../../assets/images/teste.png" alt="" className={styles.hero__img}/>
+        <img src="../../assets/images/teste.png" alt="" className={"animate__animated animate__backInUp " + styles.hero__img}/>
       </div>
     </div>
   )

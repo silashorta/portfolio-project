@@ -7,7 +7,7 @@
     height: 72px;
     padding: 0 64px;
 
-    background: linear-gradient(to right, var(--preto) 10%, #ffffff0b);
+    background: linear-gradient(to right, #000 10%, #ffffff0b);
 }
 .main {
     width: 100%;
@@ -75,7 +75,7 @@
         display: flex;
         justify-content: space-between;
         position: fixed;
-        background-color: var(--preto);
+        background-color: #000;
         z-index: 5;
         opacity: ;
     }
@@ -99,7 +99,7 @@
         width: 100vw;
         max-height: 100%;
         top: 87px;
-        background-color: var(--preto);
+        background-color: #000;
         z-index: 4;
         opacity: ;
         justify-content: center;

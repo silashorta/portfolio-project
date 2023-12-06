@@ -44,7 +44,7 @@
     .about__svg {
         width: 100%;
         /* ou qualquer outra largura desejada */
-        max-width: 60%;
+        max-width: 350px;
         /* garante que não ultrapasse 100% da largura disponível */
     }
 }
@@ -57,7 +57,7 @@
     .about__svg {
         width: 100%;
         /* ou qualquer outra largura desejada */
-        max-width: 80%;
+        max-width: 300px;
         /* garante que não ultrapasse 100% da largura disponível */
     }
 

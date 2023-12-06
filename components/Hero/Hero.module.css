@@ -7,6 +7,7 @@
     padding: 0;
 
     background-image: url(../../public/assets/images/bg-transparent.png);
+    background-attachment: fixed;
     background-size: 100vw 100% cover;
     background-repeat: no-repeat;
 }
@@ -30,12 +31,12 @@
 }
 
 .hero__img {
-    height: 100vh;
+    height: 600px;
 }
 
 @media (max-width: 810px) {
     .hero__container {
-        padding: 120px 16px 16px 16px;
+        padding: 120px 16px 0px 16px;
         gap: 16px;
         height: 100%;
     }
