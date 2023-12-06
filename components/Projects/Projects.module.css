@@ -5,7 +5,10 @@
     align-items: flex-start;
     gap: 80px;
 
-    background: linear-gradient(#141414, var(--preto));
+    background: var(--preto);
+    background-image: url('../../public/assets/images/bg-transparent-3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .projects__descricao {

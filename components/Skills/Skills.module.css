@@ -9,9 +9,9 @@
      color: var(--brancoTexto);
      
      background-image: url('../../public/assets/images/bg-transparent-3.png');
-     background: linear-gradient(var(--preto), #141414);
      background-repeat: no-repeat;
-     background-size: 100%;
+     background-size: 100% 100%;
+     background: linear-gradient(#050605, #020506) !important;
  }
 
 
