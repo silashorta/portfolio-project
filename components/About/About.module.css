@@ -5,7 +5,8 @@
 
     background-image: url("../../public/assets/images/bg-transparent-2.png");
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size:  cover;
+    background-attachment: fixed;
 }
 
 .about__titulo {
@@ -52,6 +53,7 @@
 @media (max-width: 810px) {
     .about__container {
         padding: 64px 16px;
+        background-position: 50% 100%;
     }
 
     .about__svg {

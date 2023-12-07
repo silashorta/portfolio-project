@@ -8,7 +8,8 @@
     background: var(--preto);
     background-image: url('../../public/assets/images/bg-transparent-3.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .projects__descricao {
@@ -25,5 +26,6 @@
 @media (max-width: 810px) {
     .projects__container {
         padding: 64px 16px;
+        background-position: contain;
     }
 }
