@@ -53,7 +53,7 @@
 @media (max-width: 810px) {
     .about__container {
         padding: 64px 16px;
-        background-position: 50% 100%;
+        background-position: right 100%;
     }
 
     .about__svg {
@@ -61,6 +61,13 @@
         /* ou qualquer outra largura desejada */
         max-width: 300px;
         /* garante que não ultrapasse 100% da largura disponível */
+    }
+
+}
+@media (max-width: 425px) {
+    .about__container {
+        padding: 64px 16px;
+        background-position: left;
     }
 
 }

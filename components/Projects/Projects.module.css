@@ -26,6 +26,6 @@
 @media (max-width: 810px) {
     .projects__container {
         padding: 64px 16px;
-        background-position: contain;
+        background-position: right;
     }
 }
