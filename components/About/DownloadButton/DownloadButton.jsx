@@ -4,7 +4,7 @@ import styles from './DownloadButton.module.css'
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const pdfUrl = '../../public/assets/files/Curriculo.pdf';
+    const pdfUrl = '../../assets/files/Curriculo.pdf';
 
     // Use a função saveAs para iniciar o download do arquivo
     saveAs(pdfUrl, 'Curriculo.pdf');
