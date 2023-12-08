@@ -85,10 +85,10 @@ export default function SwiperProjects() {
               </div>
               <div className={styles.swiperProjects__buttons}>
                 <a href={card.siteUrl} rel='noreferrer' target='_blank'>
-                  <button className={styles.swiperProjects__button}>Site</button>
+                  <button data-aos="flip-up" className={styles.swiperProjects__button}>Site</button>
                 </a>
                 <a href={card.projetoUrl} rel='noreferrer' target='_blank'>
-                  <button className={styles.swiperProjects__button}>Projeto</button>
+                  <button data-aos="flip-up" className={styles.swiperProjects__button}>Projeto</button>
                 </a>
               </div>
             </div>

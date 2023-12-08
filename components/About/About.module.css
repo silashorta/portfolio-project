@@ -47,6 +47,9 @@
         /* ou qualquer outra largura desejada */
         max-width: 350px;
         /* garante que não ultrapasse 100% da largura disponível */
+
+        margin-bottom: 24px;
+
     }
 }
 

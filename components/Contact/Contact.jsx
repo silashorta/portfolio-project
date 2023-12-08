@@ -7,10 +7,14 @@ function Contact() {
 
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [loading, setLoading] = useState(false); // Novo estado para controle de loading
+
 
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
+      setLoading(true); // Ativar indicador de loading
+
       const response = await fetch('https://api-portfolio-two.vercel.app/send-email', {
         method: 'POST',
         headers: {
@@ -32,9 +36,12 @@ function Contact() {
 
       } catch (error) {
         console.error('Erro ao analisar JSON:', error);
+      } finally {
+        setLoading(false); // Desativar indicador de loading
       }
     } catch (error) {
       console.error('Erro ao enviar o e-mail:', error);
+      setLoading(false);
     }
   };
 
@@ -127,6 +134,8 @@ function Contact() {
               <Field as="textarea" rows="10" id="message" name="message" placeholder="Escreva sua mensagem" className={styles.contact__field} />
             </div>
             <button type="submit" className={styles.contact__submit} data-aos="fade-up">Enviar</button>
+            {loading &&
+                <span className={styles.loadingIndicator}>Enviando mensagem...</span>}
             {showSuccessMessage && (
               <div className={"animate__animated animate__bounce " + styles.successMessage}>
                 <p>Mensagem enviada com sucesso!</p>

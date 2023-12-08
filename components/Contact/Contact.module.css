@@ -76,7 +76,7 @@
     border: 3px solid var(--dourado);
     color: var(--dourado);
 
-    
+
 }
 
 .contact__redes {
@@ -94,6 +94,35 @@
     cursor: pointer;
 }
 
+.loadingIndicator {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    background-color: var(--cinza);
+    color: var(--preto);
+    font-size: 18px;
+    font-weight: 500;
+    border: 4px solid var(--laranja);
+
+    cursor: wait;
+    animation: spin 0.75s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
 .successMessage {
     padding: 16px;
     display: flex;
@@ -107,8 +136,8 @@
     font-weight: 500;
     border: 4px solid var(--verde);
     /* ... (outros estilos desejados) */
-  }
-  
+}
+
 
 @media (max-width: 810px) {
     .contact__container {
