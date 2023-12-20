@@ -42,6 +42,11 @@
 
         background-position: cover;
     }
+
+    .hero__img {
+        height: auto;
+        width: 90vw;
+    }
 }
 @media (max-width: 425px) {
     .hero__container {
