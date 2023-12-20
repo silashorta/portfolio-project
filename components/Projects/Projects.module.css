@@ -6,10 +6,10 @@
     gap: 80px;
 
     background: var(--preto);
-    background-image: url('../../public/assets/images/bg-transparent-3.png');
+/*     background-image: url('../../public/assets/images/bg-transparent-3.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .projects__descricao {

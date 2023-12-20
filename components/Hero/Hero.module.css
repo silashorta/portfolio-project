@@ -5,13 +5,13 @@
     justify-content: space-around;
     gap: 64px;
     padding: 0;
-
-    background-image: url(../../public/assets/images/bg-transparent.png);
+    background-image: url(/public/assets/images/bg.png);
     background-attachment: fixed;
-    background-size: 100vw 100% cover;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
-
 .hero__text {
     width: /* 616px */;
 }
@@ -31,7 +31,7 @@
 }
 
 .hero__img {
-    height: 600px;
+    height: 100vh;
 }
 
 @media (max-width: 810px) {

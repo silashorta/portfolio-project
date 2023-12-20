@@ -1,133 +1,130 @@
 .menu__container {
-    position: relative;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 72px;
+  padding: 0 64px;
+
+  background: linear-gradient(to right, #000 10%, #ffffff0b);
+}
+
+.main {
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+  background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
+  background-size: 200% 100%;
+  animation: gradientAnimation 5s ease-in-out infinite;
+  filter: brightness(1.5)
+}
+
+.menu__hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.menu__links {}
+
+.responsive__menu {
+  display: none;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+
+
+.menu__logo {
+  width: 30px;
+}
+
+.menu__links {
+  display: flex;
+  gap: 32px;
+
+  font-size: 1.1rem;
+}
+
+.menu__link:hover {
+  cursor: pointer;
+  color: var(--dourado);
+  border-bottom: 3px solid var(--dourado);
+  transition: 0.5s;
+
+}
+
+@media (max-width: 810px) {
+  .menu__container {
+    width: 97vw;
+    padding: 8px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    background-color: #000;
+    z-index: 5;
+    opacity: ;
+  }
+
+  .menu__hamburger {
+    display: block;
+    padding: 0 2px;
+  }
+
+  .menu__hamburger img {
+    width: 30px;
+  }
+
+  .menu__links {
+    display: none;
+  }
+
+  .responsive__menu {
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    top: 87px;
+    background-color: #000;
+    z-index: 4;
+    opacity: ;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    text-transform: uppercase;
+  }
 
-    height: 72px;
-    padding: 0 64px;
-
-    background: linear-gradient(to right, #000 10%, #ffffff0b);
-}
-.main {
+  .main {
     width: 100%;
     height: 3px;
     overflow: hidden;
     background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
     background-size: 200% 100%;
     animation: gradientAnimation 5s ease-in-out infinite;
-    filter: brightness(1.5)
-}
-
-/* Navbar.module.css */
-
-.menu__hamburger {
-    display: none; /* Inicialmente, esconder o ícone do menu hamburguer */
-  
-    /* Adicionar estilos para o ícone do menu hamburguer (três linhas) */
-  
-    cursor: pointer;
+    filter: brightness(1.5);
+    position: absolute;
+    top: 88px;
   }
-  
-  .menu__links {
+
+  .main__reponsive {
+    width: 100%;
+    height: 3px;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s ease-in-out infinite;
+    filter: brightness(1.5);
+    z-index: 3;
   }
-  
-  /* Adicionar estilos para o menu responsivo */
-  .responsive__menu {
-    display: none; /* Inicialmente, esconder o menu responsivo */
-  }
-  
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: -100% 0;
-    }
-}
-
-
-
-.menu__logo {
-    width: 30px;
-}
-
-.menu__links {
-    display: flex;
-    gap: 32px;
-
-    font-size: 1.1rem;
-}
-
-.menu__link:hover {
-    cursor: pointer;
-    color: var(--dourado);
-    border-bottom: 3px solid var(--dourado);
-    transition: 0.5s;
-
-}
-
-@media (max-width: 810px) {
-    .menu__container {
-        width: 97vw;
-        padding: 8px;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        background-color: #000;
-        z-index: 5;
-        opacity: ;
-    }
-
-    .menu__hamburger {
-        display: block; /* Mostrar o ícone do menu hamburguer em telas menores que 810px */
-        padding: 0 2px;
-      }
-      .menu__hamburger img{
-        width: 30px;
-      }
-    
-      .menu__links {
-        display: none; /* Esconder o menu de links normal em telas menores que 810px */
-      }
-    
-      .responsive__menu {
-        display: flex;
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        max-height: 100%;
-        top: 87px;
-        background-color: #000;
-        z-index: 4;
-        opacity: ;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 16px;
-        text-transform: uppercase;
-      }
-
-      .main {
-        width: 100%;
-        height: 3px;
-        overflow: hidden;
-        background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
-        background-size: 200% 100%;
-        animation: gradientAnimation 5s ease-in-out infinite;
-        filter: brightness(1.5);
-        position: absolute;
-        top: 88px;
-    }
-      .main__reponsive {
-        width: 100%;
-        height: 3px;
-        overflow: hidden;
-        background: linear-gradient(to right, var(--dourado) 0%, var(--laranja) 50%, var(--dourado) 100%);
-        background-size: 200% 100%;
-        animation: gradientAnimation 5s ease-in-out infinite;
-        filter: brightness(1.5);
-        z-index: 3;
-    }
 }
