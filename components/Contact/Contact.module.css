@@ -141,12 +141,16 @@
 
 @media (max-width: 810px) {
     .contact__container {
-        padding: 64px 16px;
+        padding: 64px 32px;
         flex-wrap: wrap;
     }
 
+    .contact__form_container{
+        width: 100%;
+    }
+
     .contact__form {
-        width: 80vw;
+        width: 100%;
     }
 
     .contact__redes {

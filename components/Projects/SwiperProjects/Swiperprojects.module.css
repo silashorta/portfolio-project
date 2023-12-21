@@ -1,6 +1,6 @@
 .swiperProjects__container{
     margin: 0 auto;
-    width: 70vw;
+    width: 40vw;
     padding: 16px;
     background-color: #ffffff0b;
 
@@ -61,9 +61,9 @@ font-size: 16px !important;
     margin: 16px 4px;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 1340px) {
     .swiperProjects__container {
-        width: 95%;
+        width: 80vw;
         padding: 8px;
     }
   }
