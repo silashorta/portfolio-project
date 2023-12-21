@@ -1,7 +1,7 @@
 .about__container {
     padding: 64px 112px;
     gap: 80px;
-    background: var(--preto);
+    background: linear-gradient(to bottom, var(--dark), var(--preto)) ; 
 
 /*     background-image: url("../../public/assets/images/bg-transparent-2.png");
     background-repeat: no-repeat;

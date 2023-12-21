@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    background: linear-gradient(to right, var(--preto), var(--dark)) ; 
+    background: linear-gradient(to bottom, var(--preto), var(--dark)) ; 
 }
 
 .cta__text {
