@@ -43,14 +43,8 @@ function About() {
         <h3 ref={typingRef} className={styles.about__titulo} data-aos="fade-up">{text}</h3>
         <div className={styles.about__descricao_container} data-aos="fade-up">
           <div ref={animatedRef} className={"animate__animated animate__bounceInLeft " + styles.about__descricao}>
-            <p>Olá, sou Silas Horta, um desenvolvedor web apaixonado por transformar ideias em
-              experiências digitais. Desde minha primeira linha de código, minha jornada começou com
-              uma simples curiosidade em desvendar o mundo por trás dos sites que visitava.</p>
-            <p>O que mais me fascina é a capacidade de
-              transformar conceitos em realidade digital, tornando linhas de código em experiências
-              significativas.</p>
-            <p>Vamos transformar suas ideias em
-              realidade digital e criar soluções que realmente se destaquem na web!</p>
+            <p>Olá, sou Silas Horta, um entusiasta da web dedicado a dar vida a ideias através de experiências digitais. Desde o momento em que digitei minha primeira linha de código, fui movido pela curiosidade de desvendar o fascinante mundo que se esconde por trás dos sites que explorava.</p>
+            <p>Vamos trabalhar juntos para materializar suas ideias no mundo digital, criando soluções que se destacam na web! Tenho habilidades em React para interfaces dinâmicas, Node.js para desenvolvimento eficiente do lado do servidor, e MySQL para gerenciar e manipular dados de forma eficaz. Estou pronto para transformar sua visão em um projeto notável!</p>
           </div>
     {/*       <div ref={animatedRef} className={styles.about__svg}>
             <img src="../../assets/images/eu4.png" alt="" className={styles.about__img}/>
