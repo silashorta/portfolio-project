@@ -36,7 +36,7 @@ export default function SwiperProjects() {
       icons: ["biblioteca.png", "bootstrap.png", "git.png"]
     }, {
       titulo: "Portfólio",
-      imageUrl: "to-do-list.png",
+      imageUrl: "portfolio.png",
       descricao: `O projeto é um portfólio web desenvolvido em React. Utilizo diversas dependências para aprimorar a experiência do usuário, incluindo bibliotecas como "@ramonak/react-progress-bar" para barras de progresso, "animate.css" para animações e "swiper" para carrosséis interativos. A integração de "nodemailer" facilita o envio de e-mails, "express" e "cors" são empregados para o backend, e "formik" gerencia formulários. O uso de "react-intersection-observer" e "react-visibility-sensor" lida com a visibilidade de elementos.`,
       siteUrl: "https://portfolio-project-fxes6cdti-silashorta.vercel.app/",
       projetoUrl: "https://github.com/silashorta/portfolio-project",
