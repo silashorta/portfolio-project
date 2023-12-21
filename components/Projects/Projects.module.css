@@ -15,24 +15,40 @@
 
 .projects__bloco {
     width: 100%;
+    height: 746px;
     display: flex;
     justify-content: center;
     gap: 16px;
-
 }
 
 .projects__bloco_galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 40vw;
+    width: 30vw;
+    height: 760px;
     padding: 8px;
     border-radius: 10px;
     background-color: var(--dark);
+    overflow-y: scroll;
+}
+
+.projects__bloco_galeria::-webkit-scrollbar {
+    width: 12px;
+}
+
+.projects__bloco_galeria::-webkit-scrollbar-thumb {
+    background-color: var(--dark);
+    border-radius: 6px;
+}
+
+.projects__bloco_galeria::-webkit-scrollbar-track {
+    background-color: var(--cinza);
+    border-radius: 8px;
 }
 
 .projects__bloco_card {
-    width: 44%;
+    width: 100%;
     height: auto;
     margin: 8px;
     padding: 8px;
@@ -62,7 +78,7 @@
 
 }
 
-.projects__buttons{
+.projects__buttons {
     display: flex;
     gap: 8px;
     padding: 24px 0;

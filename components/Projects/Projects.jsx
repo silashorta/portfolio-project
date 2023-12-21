@@ -87,10 +87,10 @@ function Projects() {
               <div>
                 <div className={styles.projects__buttons}>
                   <a href={card.siteUrl} rel='noreferrer' target='_blank'>
-                    <button data-aos="flip-up" className={styles.projects__button}>Site</button>
+                    <button data-aos="" className={styles.projects__button}>Site</button>
                   </a>
                   <a href={card.projetoUrl} rel='noreferrer' target='_blank'>
-                    <button data-aos="flip-up" className={styles.projects__button}>Projeto</button>
+                    <button data-aos="" className={styles.projects__button}>Projeto</button>
                   </a>
                 </div>
               </div>

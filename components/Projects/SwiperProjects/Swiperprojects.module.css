@@ -1,9 +1,9 @@
 .swiperProjects__container{
     margin: 0 auto;
-    width: 40vw;
+    width: 700px;
+    height: 745px;
     padding: 16px;
     background-color: #ffffff0b;
-
     border-radius: 10px;
 }
 
