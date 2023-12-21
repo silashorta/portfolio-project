@@ -31,7 +31,8 @@
 }
 
 .hero__img {
-    height: 100vh;
+    height: auto;
+    width: 400px;
 }
 
 @media (max-width: 810px) {
@@ -45,7 +46,7 @@
 
     .hero__img {
         height: auto;
-        width: 90vw;
+        width: ;
     }
 }
 @media (max-width: 425px) {
