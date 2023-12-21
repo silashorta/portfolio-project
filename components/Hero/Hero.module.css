@@ -46,7 +46,6 @@
 
     .hero__img {
         height: auto;
-        width: ;
     }
 }
 @media (max-width: 425px) {
@@ -56,5 +55,9 @@
         height: 100%;
 
         background-position: 25% 75%;
+    }
+
+    .hero__img {
+        width: 95vw;
     }
 }

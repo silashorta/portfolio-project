@@ -30,8 +30,8 @@
     font-family: var(--outfit);
 }
 
-.about__svg {
-    width: 600px;
+.about__img {
+    width: 90vw;
     /* ou qualquer outra largura desejada */
     max-width: 600px;
     /* garante que não ultrapasse 100% da largura disponível */
