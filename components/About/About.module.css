@@ -1,12 +1,10 @@
 .about__container {
     padding: 64px 112px;
     gap: 80px;
-    background: linear-gradient(to bottom, var(--dark), var(--preto)) ; 
-
-/*     background-image: url("../../public/assets/images/bg-transparent-2.png");
-    background-repeat: no-repeat;
-    background-size:  cover;
-    background-attachment: fixed; */
+    background: -webkit-linear-gradient(to bottom, var(--dark), var(--preto)); /* Chrome 10+, Safari 5.1+ */
+    background: -moz-linear-gradient(to bottom, var(--dark), var(--preto)); /* Firefox 3.6+ */
+    background: -o-linear-gradient(to bottom, var(--dark), var(--preto)); /* Opera 11.1+ */
+    background: linear-gradient(to bottom, var(--dark), var(--preto)); /* Padrão */
 }
 
 .about__titulo {
